@@ -1,0 +1,238 @@
+/* VARIABLES */
+
+:root {
+    --color-gold: #c09725;
+    --color-black: #000;
+    --color-white: #FFF;
+    --color-grey: #808080;
+}
+/* Bitcoin falling to wallet*/
+
+.becoin {
+    width: 10%;
+    height: auto;
+    visibility:visible;
+    position: relative;
+    top: -400px;
+}
+
+.fallingcoin{
+    visibility: visible;
+    left: 38%;
+    position:absolute;
+    width:23%;
+    top: -300px;
+    height: auto;
+    animation: drop 0.2s ease forwards;
+    animation-iteration-count: 1;
+}
+
+  @keyframes drop{
+    
+    0%{opacity: 0}
+    100%{transform: translateY(600px)}
+    
+  }
+
+/* RESET */ 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    height: 100vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* RESET ANIMATION */
+
+#gimmick {
+    display:block;
+    pointer-events:none;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+/* STYLE */
+
+body {
+    background-color: var(--color-black);
+}
+.title {
+    padding-top: 20px;
+    text-align: center;
+}
+
+h1, h3 {
+    color: var(--color-gold);
+}
+
+h2 {
+    color: var(--color-white);
+}
+
+h1, h2, h3 {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 50px;
+}
+
+#scoredisplay h1{
+    font-size: 25px;
+}
+
+#scoredisplay span {
+    color: var(--color-white);
+}
+
+#points-score {
+    text-align: center;
+}
+
+.clickercontainer {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    float: left;
+    margin-left: 150px;
+    top: -55px;
+}
+
+.clickercontainer img {
+    width: 380px;
+    height: 380px;
+}
+
+.row {
+    position: relative;
+    width: 100px;
+    float: right;
+    margin-right: 150px;
+    top: -150px;
+}
+
+.row .row-btn {
+    padding-top: 50px;
+}
+.row img {
+    width: 65px;
+    height: 65px;
+    left: 50%;
+    padding-top: 8px;
+}
+
+span.active {
+    color: var(--color-white);
+}
+
+.wallet {
+    position: absolute;
+    clear: both;
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 150px;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+img:active {
+    transform: scale(0.98);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--color-gold);
+}
+
+.btn-price {
+    color: var(--color-grey);
+    
+}
+
+.row p {
+    font-size: 15px;
+}
+
+.btn-name {
+    color: var(--color-gold);
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.btn-price p {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        height: auto;
+    }
+    .clickercontainer {
+        float: none;
+        margin: 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+    }
+    .fallingcoin{
+        visibility: visible;
+        left: 25%;
+        position:absolute;
+        width:50%;
+        top: 250px;
+        height: auto;
+        animation: drop 0.2s ease forwards;
+        animation-iteration-count: 1;
+    }
+    
+      @keyframes drop{
+        
+        0%{opacity: 0}
+        100%{transform: translateY(200px)}
+        
+      }
+    .row {
+        position: relative;
+        float: none;
+        width: 310px;
+        left: 55%;
+        transform: translateX(-50%);
+        top: 10px;
+    }
+    .row .row-btn {
+        float:left;
+        width: 100px;
+        padding: 0px;
+    }
+    .wallet {
+        position: relative;
+        bottom: 0;
+        top: 10px;
+    }
+    footer {
+        position: relative;
+        top: 20px;
+    }
+    
+}
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BITCOIN CLICKER</title>
+        <link rel="stylesheet" href="style3.css">
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Italianno&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Falling Bitcoin to wallet-->
+        <div class="fallingcoin">
+        <img class="becoin" src="media/imgprincipale.png">
+        </div>
+        <!-- /Falling Bitcoin to wallet-->
+        <div class="title">
+            <h1>Bitcoin Clicker</h1>
+            <h2>Click to get more coins!</h2>
+            <h3>We always need more...</h3>
+        </div>
+        <header>
+            <div id="scoredisplay">
+                <h1 id="points-score"><span id="score">0</span>&nbsp;bitcoins</h1>
+            </div>
+            </section>
+        </header>
+        <main>
+            <div class="clickercontainer">
+                <img id="clickercontainer" src="media/imgprincipale.png" class="clicker" alt="Bitcoin principale">
+            </div>
+            <div class="row">
+                <div class="row-btn">
+                    <a href="#" id ="btn-autoclicker" class="btn bronze disable">
+                        <p class="btn-name">auto clicker - 1bitcoin/s</p>
+                        <img src="media/xpbronze.avif" alt="Bronze coin">
+                        <div class="btn-price">
+                            <p><span id="autoClickerPrice">25</span><span class="money-icon"></span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="row-btn">
+                    <a href="#" id ="btn-bonus" class="btn grey disable">
+                        <p class="btn-name">bonus - 30s x2 timer : <span id="timer">0</span></p>
+                        <img src="media/xpargent.avif" alt="Argent coin">
+                        <div class="btn-price">
+                            <p><span id="bonusPrice">200</span><span class="money-icon"></span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="row-btn">
+                    <a href="#" id ="btn-multiplicator" class="btn gold disable">
+                        <p class="btn-name">points per click<br> <span id="upgrade-3">5</span></p>
+                        <img src="media/xpor.avif" alt="Or coin">
+                        <div class="btn-price">
+                            <p><span id="multiplierPrice">500</span><span class="money-icon"></span></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="wallet">
+                <img type="reset" width="250px" height="250px" id="reset" src="media/imgwallet.png" alt="Wallet principal">
+            </div>
+        </main>
+        <footer>
+            <p>© Aurélien Saelens</p>
+            <p>© Nicolas Biren</p>
+            <p>© Ammar Alsharek</p>
+        </footer>
+        <script src="script3.js"></script>
+    </body>
+</html>
