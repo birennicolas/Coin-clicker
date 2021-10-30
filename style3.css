@@ -11,7 +11,7 @@
 .becoin {
     width: 10%;
     height: auto;
-    visibility:visible;
+    visibility:hidden;
     position: relative;
     top: -400px;
 }
